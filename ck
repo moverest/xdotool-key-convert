@@ -31,7 +31,7 @@ TABLE = {
 }
 
 def convert(str):
-    return "\n".join(TABLE.get(c, c) + "\n" for c in str)
+    return "\n".join(TABLE.get(c, c) for c in str)
 
 if __name__ == '__main__':
     import sys
